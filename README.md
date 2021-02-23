@@ -15,7 +15,7 @@ The project should contain a Header, a Footer, a Highlights section and a Latest
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://fernandorpm.github.io/mv-project2/)
 
 
 ## Install
