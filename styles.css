@@ -1,0 +1,509 @@
+/* GLOBAL STYLES ============================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* Text Properties */
+
+a {
+  text-decoration: none;
+  color: #a8a8a8;
+}
+
+a:hover {
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.line-breaker {
+  display: none;
+}
+
+.highlight-break {
+  height: 100px;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.lh-150 {
+  line-height: 1.5;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.margin-text {
+  margin: 0 10px;
+}
+
+.pad-ver-5 {
+  padding: 5px 0;
+}
+
+.pad-ver-20 {
+  padding: 20px 0;
+}
+
+.pad-15 {
+  padding: 15px;
+}
+
+.pad-20-30 {
+  padding: 20px 30px;
+}
+
+.pad-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.w15 {
+  width: 15%;
+  margin: auto;
+}
+
+.w20 {
+  width: 20%;
+  margin: auto;
+}
+
+.w30 {
+  width: 30%;
+  margin: auto;
+}
+
+.w40 {
+  width: 40%;
+  margin: auto;
+}
+
+.w60 {
+  width: 60%;
+  margin: auto;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w1192 {
+  width: 1192px;
+  margin: auto;
+}
+
+.w300px {
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+/* Div Colors */
+
+.black-div {
+  background-color: black;
+}
+
+.white-div {
+  background-color: white;
+}
+
+.yellow-div {
+  background-color: #fd3;
+}
+
+/* Div Type */
+
+nav {
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-small {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.div-border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.float {
+  float: left;
+}
+
+.block {
+  display: block;
+}
+
+.section-break {
+  height: 70px;
+}
+
+/* Text Colors */
+
+.grey-text {
+  color: #a8a8a8;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.black-text {
+  color: #000;
+}
+
+.orange-text {
+  color: #f42;
+}
+
+.hover-white:hover {
+  color: white;
+}
+
+.hover-black:hover {
+  color: black;
+}
+
+/* Text Font Size */
+
+.news-top-main-1 {
+  font-size: 35px;
+}
+
+.news-top-main-2 {
+  font-size: 22px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-35 {
+  font-size: 47px;
+}
+
+#search-btn {
+  border-left: 1px solid #e2e2e2;
+}
+
+#accessibility-icon {
+  color: #2d76ee;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  transition-duration: 0.2s;
+  z-index: 1;
+}
+
+#accessibility-icon:hover {
+  scale: 1.1;
+}
+
+#top-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#top-main-1-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#top-main-1-top h2 {
+  font-size: 125px;
+  line-height: 0.8;
+}
+
+.top-main-1-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.top-main-1-bottom p {
+  padding: 5px 0;
+}
+
+#top-main-1 {
+  background-image:
+    url("./images/header1.jpg"),
+    -webkit-linear-gradient(180deg, rgba(255, 0, 0, 0.4) 60%, rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header1.jpg"),
+    -moz-linear-gradient(180deg, rgba(255, 0, 0, 0.4) 60%, rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header1.jpg"),
+    -o-linear-gradient(180deg, rgba(255, 0, 0, 0.4) 60%,rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header1.jpg"),
+    linear-gradient(180deg, rgba(255, 0, 0, 0.4) 60%,rgba(0, 0, 0, 1) 100%);
+  background-blend-mode: color-burn;
+  background-position: center;
+  padding: 20px;
+  margin: 6px;
+  background-size: cover;
+  height: 456px;
+  background-repeat: no-repeat;
+}
+
+#top-main-2 {
+  background-image:
+    url("./images/header2.webp"),
+    -webkit-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header2.webp"),
+    -moz-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header2.webp"),
+    -o-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%,rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header2.webp"),
+    linear-gradient(180deg, rgba(255, 0, 0, 0) 0%,rgba(0, 0, 0, 1) 100%);
+  background-blend-mode: color-burn;
+  background-position: center;
+  margin: 6px;
+  background-size: cover;
+  height: 225px;
+  background-repeat: no-repeat;
+}
+
+#top-main-3 {
+  background-image:
+    url("./images/header3.webp"),
+    -webkit-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header3.webp"),
+    -moz-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header3.webp"),
+    -o-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%,rgba(0, 0, 0, 1) 100%);
+  background-image:
+    url("./images/header3.webp"),
+    linear-gradient(180deg, rgba(255, 0, 0, 0) 0%,rgba(0, 0, 0, 1) 100%);
+  background-blend-mode: color-burn;
+  background-position: center;
+  margin: 6px;
+  background-size: cover;
+  height: 225px;
+  background-repeat: no-repeat;
+}
+
+/* LATEST FUNDING STYLES ===================================================== */
+
+.funding-card {
+  background-color: #fffaf8;
+  width: 100%;
+}
+
+.funding-logo {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.funding-card-title {
+  background-color: #f42;
+  padding: 10px 0 10px 80px;
+}
+
+.funding-card-value-info {
+  background-color: #ffebe7;
+  padding: 10px 0 10px 80px;
+}
+
+hr {
+  border-top: 1px solid #fac4b9;
+}
+
+.funding-card-margin {
+  margin-left: 2%;
+}
+
+/* FOOTER STYLES =============================================================== */
+
+#footer {
+  background-color: rgb(27, 27, 27);
+  padding-top: 15px;
+}
+
+#footer-bottom {
+  background-color: rgb(0, 0, 0);
+}
+
+.footer-link {
+  color: white;
+  background-color: gray;
+  border: solid gray 2px;
+  border-radius: 50%;
+  padding: 7px 9px;
+}
+
+.footer-link:hover {
+  color: gray;
+  background-color: #000;
+}
+
+@media (max-width: 1200px) {
+
+  #footer-bottom {
+    font-size: 14px;  
+  }
+
+  .top-main {
+    display: none;
+  }
+
+  .flex-col-tablet {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .news-top-main-1 {
+    font-size: 28px;
+  }
+
+  .news-top-main-2 {
+    font-size: 20px;
+  }
+
+  .w1192 {
+    width: 98%;
+    margin: auto;
+  }
+
+  .funding-card-last {
+    display: none;
+  }
+
+  .top-main-tablet {
+    display: block;
+  }
+
+  #top-main-1-top {
+    display: none;
+  }
+
+  #top-main-1 {
+    background-image:
+      url("./images/header1.jpg"),
+      -webkit-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background-image:
+      url("./images/header1.jpg"),
+      -moz-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background-image:
+      url("./images/header1.jpg"),
+      -o-linear-gradient(180deg, rgba(255, 0, 0, 0) 0%,rgba(0, 0, 0, 1) 100%);
+    background-image:
+      url("./images/header1.jpg"),
+      linear-gradient(180deg, rgba(255, 0, 0, 0) 0%,rgba(0, 0, 0, 1) 100%);
+  }
+}
+
+@media (max-width: 700px) {
+
+  #top-main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #top-main-1 {
+    height: 225px;
+  }
+
+  .highlight-break {
+    height: 110px;
+  }
+
+  .nav-large {
+    display: none;
+  }
+
+  .nav-small {
+    display: block;
+  }
+
+  .flex-col-mobile {
+    flex-direction: column;
+  }
+
+  .funding-card-margin {
+    margin: 20px 0;
+  }
+
+  .news-top-main-1 {
+    font-size: 20px;
+  }
+
+  #search-btn {
+    border-right: 1px solid #e2e2e2;
+  }
+
+  .line-breaker {
+    display: block;
+  }
+}
