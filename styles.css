@@ -35,7 +35,15 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-.line-breaker {
+li {
+  display: inline;
+}
+
+.show-mobile {
+  display: none;
+}
+
+.show-tablet {
   display: none;
 }
 
@@ -143,7 +151,8 @@ p {
 
 /* Div Type */
 
-nav {
+.nav-large,
+.nav-small {
   position: fixed;
   z-index: 1;
 }
@@ -417,6 +426,10 @@ hr {
     display: none;
   }
 
+  .show-tablet {
+    display: block;
+  }
+
   .flex-col-tablet {
     flex-direction: column;
     align-items: initial;
@@ -501,7 +514,11 @@ hr {
     border-right: 1px solid #e2e2e2;
   }
 
-  .line-breaker {
+  .show-mobile {
     display: block;
+  }
+
+  .hide-mobile {
+    display: none;
   }
 }
